@@ -4,7 +4,7 @@ const url = "https://api.openai.com/v1";
     class MainWebComponent extends HTMLElement {
         async post(apiKey, endpoint, prompt) {
             var response = apiKey + ' => ' + `${url}/${endpoint}` + ' => ' + prompt;
-            console.log(["response", response]);
+            console.log(["response_output", response]);
             return response;
             }
         }
