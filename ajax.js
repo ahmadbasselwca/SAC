@@ -1,4 +1,4 @@
-const url = "https://api.openai.com/v1";
+//const url = "https://api.openai.com/v1";
 
 (function () {
     class MainWebComponent extends HTMLElement {
