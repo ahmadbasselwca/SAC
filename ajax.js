@@ -7,5 +7,5 @@
             }
         }
     
-    customElements.define("custom-widget", MainWebComponent);
+    customElements.define("script-element", MainWebComponent);
 })();
