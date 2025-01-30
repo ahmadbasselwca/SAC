@@ -8,7 +8,7 @@
       `;
     class MainWebComponent extends HTMLElement {
       async post(apiKey, endpoint, prompt) {
-        const { response } = apiKey + ' => ' + `${endpoint}` + ' => ' + prompt;
+        const response = apiKey + ' => ' + `${endpoint}` + ' => ' + prompt;
         console.log(response);
         return response;
       }
