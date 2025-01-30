@@ -1,5 +1,3 @@
-const url = "https://api.openai.com/v1";
-
 (function () {
     const template = document.createElement("template");
     template.innerHTML = `
@@ -10,10 +8,10 @@ const url = "https://api.openai.com/v1";
       `;
     class MainWebComponent extends HTMLElement {
       async post(apiKey, endpoint, prompt) {
-        const { response } = apiKey + ' => ' + `${url}/${endpoint}` + ' => ' + prompt;
+        const { response } = apiKey + ' => ' + `${endpoint}` + ' => ' + prompt;
         console.log(response);
         return response;
       }
     }
     customElements.define("custom-widget", MainWebComponent);
-})();
+  })();
