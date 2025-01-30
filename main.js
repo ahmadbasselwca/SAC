@@ -37,7 +37,7 @@ var ajaxCall = (key, url, prompt, model) => {
     `;
   class MainWebComponent extends HTMLElement {
     async post(apiKey, endpoint, prompt, model) {
-      var response = await ajaxCall(
+      var { response } = await ajaxCall(
         apiKey,
         `${endpoint}`,
         prompt,
