@@ -4,7 +4,7 @@
     class MainWebComponent extends HTMLElement {
         async post(apiKey, endpoint, prompt) {
             var response = 'response_output: ' + apiKey + ' => ' + `${url}/${endpoint}` + ' => ' + prompt;
-            console.log(["response_output", response]);
+            console.log(["AJAX response", response]);
             return response;
             }
         }
