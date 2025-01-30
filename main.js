@@ -8,7 +8,8 @@ var ajaxCall = (key, url, prompt, model) => {
         model: model,
         prompt: prompt,
         max_tokens: 1024,
-        temperature: 0,
+        top_p: 0.2,
+        //temperature: 0.5,
         n: 1,
       }),
       headers: {
