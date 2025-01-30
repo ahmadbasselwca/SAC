@@ -5,7 +5,7 @@ var ajaxCall = (key, url, prompt) => {
       type: "POST",
       dataType: "json",
       data: JSON.stringify({
-        model: "text-davinci-002",
+        model: "davinci-002",
         prompt: prompt,
         max_tokens: 1024,
         n: 1,
@@ -28,7 +28,7 @@ var ajaxCall = (key, url, prompt) => {
   });
 };
 
-const url = "https://api.openai.com/v1/chat";
+const url = "https://api.openai.com/v1";
 
 (function () {
   const template = document.createElement("template");
@@ -45,7 +45,7 @@ const url = "https://api.openai.com/v1/chat";
         `${url}/${endpoint}`,
         prompt
       );
-      //console.log(response.choices[0].text);
+      console.log(response.choices[0].text);
       return response.choices[0].text;
     }
   }
