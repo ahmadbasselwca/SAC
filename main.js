@@ -28,8 +28,6 @@ var ajaxCall = (key, url, prompt, model) => {
   });
 };
 
-const url = "https://api.openai.com/v1";
-
 (function () {
   const template = document.createElement("template");
   template.innerHTML = `
@@ -42,7 +40,7 @@ const url = "https://api.openai.com/v1";
     async post(apiKey, endpoint, prompt, model) {
       var response = await ajaxCall(
         apiKey,
-        `${url}/${endpoint}`,
+        `${endpoint}`,
         prompt
       );
       var response_output = response.choices[0].text;
