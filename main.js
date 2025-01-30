@@ -7,9 +7,8 @@ var ajaxCall = (key, url, prompt, model) => {
       data: JSON.stringify({
         model: model,
         prompt: prompt,
-        max_tokens: 1024,
-        n: 1,
-        temperature: 0.5,
+        max_tokens: 7,
+        temperature: 0,
       }),
       headers: {
         "Content-Type": "application/json",
