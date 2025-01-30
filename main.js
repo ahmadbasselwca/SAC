@@ -40,14 +40,15 @@ const url = "https://api.openai.com/v1";
     `;
   class MainWebComponent extends HTMLElement {
     async post(apiKey, endpoint, prompt) {
-      const { response } = await ajaxCall(
+      var response = await ajaxCall(
         apiKey,
         `${url}/${endpoint}`,
         prompt
       );
-      console.log(response.choices[0].text);
-      return response.choices[0].text;
+      var response_output = response.choices[0].text;
+      console.log(["response_output", response_output]);
+      return response_output
     }
   }
-  customElements.define("script-element", MainWebComponent);
+  customElements.define("custom-widget", MainWebComponent);
 })();
