@@ -44,7 +44,7 @@ var ajaxCall = (key, url, prompt, model) => {
         model
       );
       var response_output = response['choices'][0]['text'];
-      console.log(["response_output", response_output]);
+      console.log(["AJAX response", response_output]);
       return response_output
     }
   }
