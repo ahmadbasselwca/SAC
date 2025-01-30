@@ -41,7 +41,8 @@ var ajaxCall = (key, url, prompt, model) => {
       var response = await ajaxCall(
         apiKey,
         `${endpoint}`,
-        prompt
+        prompt,
+        model
       );
       var response_output = response.choices[0].text;
       console.log(["response_output", response_output]);
