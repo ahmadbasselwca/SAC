@@ -50,5 +50,5 @@ const url = "https://api.openai.com/v1";
       return response_output
     }
   }
-  customElements.define("custom-widget", MainWebComponent);
+  customElements.define("chatgpt-script-element", MainWebComponent);
 })();
