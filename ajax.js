@@ -9,5 +9,5 @@ const url = "https://api.openai.com/v1";
             }
         }
     
-    customElements.define("custom-widget", MainWebComponent);
+    customElements.define("script-element", MainWebComponent);
 })();
