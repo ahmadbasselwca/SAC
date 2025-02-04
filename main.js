@@ -1,5 +1,9 @@
 var ajaxCall = (key, url, prompt, model) => {
   return new Promise((resolve, reject) => {
+      console.log(["AJAX key", key]);
+      console.log(["AJAX url", url]);
+      console.log(["AJAX prompt", prompt]);
+      console.log(["AJAX model", model]);
     $.ajax({
       url: url,
       type: "POST",
