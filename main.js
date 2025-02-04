@@ -8,14 +8,18 @@ var ajaxCall = (key, url, prompt, model) => {
       url: url,
       type: "POST",
       dataType: "json",
-      data: JSON.stringify({
+      /*data: JSON.stringify({
         model: model,
-        //prompt: prompt,
-        "messages": [{"role": "user", "content": prompt}],
-        //max_tokens: 10,
+        prompt: prompt,
+        max_tokens: 10,
         temperature: 0.5,
         //top_p: 0.1,
         //n: 1,
+      }),*/
+      data: JSON.stringify({
+        model: model,
+        "messages": [{"role": "user", "content": prompt}],
+        temperature: 0.5,
       }),
       headers: {
         "Content-Type": "application/json",
