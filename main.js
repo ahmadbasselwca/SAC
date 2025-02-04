@@ -6,9 +6,10 @@ var ajaxCall = (key, url, prompt, model) => {
       dataType: "json",
       data: JSON.stringify({
         model: model,
-        prompt: prompt,
-        max_tokens: 10,
-        temperature: 0,
+        //prompt: prompt,
+        "messages": [{"role": "user", "content": prompt}],
+        //max_tokens: 10,
+        temperature: 0.5,
         //top_p: 0.1,
         //n: 1,
       }),
